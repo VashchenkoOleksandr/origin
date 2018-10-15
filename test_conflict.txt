@@ -1,7 +1,0 @@
-conflict test
-
-<<<<<<< HEAD
-next to conflicts
-=======
-sext to conflicts
->>>>>>> conflict
