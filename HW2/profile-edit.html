@@ -2,11 +2,92 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <style>
+        h1{margin-left: 12%;}
+        fieldset {
+            margin-left: 2%;
+            width: 45%;
+        }
+        input{width: 75%;}
+        label{
+            float: left;
+            width: 20%;
+        }
+        select{width: 75%;}
+        .checkbox {margin-left: 18%;}
+        .checkbox input{width: 6%;}
+        .checkbox p{margin-left: 7%;}
+        .checkbox label{margin-left: -22%;}
+        .exp input{
+            width: 10%;
+            text-align: right;}
+        .dev input{
+            width: 5%;
+            margin-left: 18%;
+        }
+        .hidden{visibility: hidden;}
+        .cancel{
+            margin-left: 35%;
+            border: 0;
+            background-color: white;}
+    </style>
     <meta charset="utf-8" />
     <title>Profile edit page</title>
 </head>
 <body>
-    <h1>Profile edit page</h1>
-
+<h1>Profile edit page</h1>
+<fieldset>
+    <legend>Basic info</legend>
+    <p><label for="ID">ID</label> <input disabled type="text" id="ID" value="725"></p>
+    <p><label for="first_name">First Name</label> <input type="text" id="first_name"></p>
+    <p><label for="last_name">Last Name</label> <input type="text" id="last_name"></p>
+    <p><label for="password">Password</label> <input type="password" id="password" placeholder="**********"></p>
+    <p><label for="phone">Phone</label> <input type="tel" pattern="380[0-9]{7}" id="phone"
+                                               placeholder="380" maxlength="12"></p>
+    <p><label for="email">Email</label> <input type="email" id="email" maxlength="50"
+                                               placeholder="myemail@placeholder.com"></p>
+    <div class="checkbox"><input id="private" type="checkbox">Keep my email address private
+        <p>We'll remove your public profile email and use 1978331+username@userrs.noreplylocalhost</p>
+    </div>
+    <p><label for="DOB">DOB</label> <input type="date" id="DOB"></p>
+    <p><label for="blog_url">Blog url</label> <input type="text" id="blog_url" placeholder="http://"></p>
+    <p><label for="about_me">About me</label> <textarea id="about_me" rows="8" cols="62" wrap="hard"></textarea></p>
+    <p><label for="profile_picture">Profile picture</label>
+        <button id="profile_picture">Chose the file</button>
+    </p>
+</fieldset>
+<br/>
+<fieldset>
+    <legend>Professional info</legend>
+    <p><label for="des">Desire to study</label><input id="des" type="range" min="1" max="100" value="75"></p>
+    <div class="exp"><label for="Exp">Experience</label><input id="Exp" type="number" value="3">&nbsp; years</div>
+    <p>Development Experience</p>
+    <div class="dev">
+        <input id="dev0" type="radio" name="Learning to program">Learning to program<br/>
+        <input id="dev1" type="radio" name="Junior Developer" checked="checked">Junior Developer<br/>
+        <input id="dev2" type="radio" name="Mid-Level Developer">Mid-Level Developer<br/>
+        <input id="dev3" type="radio" name="Senior Developer">Senior Developer
+    </div>
+    <p><label for="country">Desire to study</label>
+        <select id="country">
+            <option>Ukraine</option>
+            <option>USA</option>
+            <option>Thailand</option>
+            <option>Spain</option>
+            <option class="hidden" disabled="disabled"  selected="selected">- Choose Your Country -</option>
+        </select></p>
+    <div class="checkbox">
+        <label>Skills</label>
+        <input id="ch0" type="checkbox" checked>HTML<br/>
+        <input id="ch1" type="checkbox">CSS<br/>
+        <input id="ch2" type="checkbox">JavaScript<br/>
+        <input id="ch3" type="checkbox">R<br/>
+        <input id="ch4" type="checkbox">Scala<br/>
+        <input id="ch5" type="checkbox">Haskell
+    </div>
+</fieldset>
+<br />
+<button class="cancel" type="reset">< Cancel</button>
+<button type="submit">Submit</button>
 </body>
 </html>
