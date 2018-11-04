@@ -30,6 +30,13 @@ h1, h3{
     text-align: right;
 }
 
+.button-lng img{
+    position: fixed;
+    top: 95%;
+    width: 10px;
+    height: auto;
+}
+
 header{
     display: flex;
     flex-wrap: wrap;
@@ -138,7 +145,7 @@ flex: 0 0 20%;
 }
 
 .footer-photo img{
-    width: 150px;
+    width: 125px;
     height: auto;
 }
 
