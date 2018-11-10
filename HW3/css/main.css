@@ -109,22 +109,22 @@ flex: 0 0 20%;
 
 
 /* The part of footer style */
-.footer {
+.footer-news {
     display: flex;
     flex: 1;
     border-top: 2px groove #000000;
 }
 
-.footer > nav,
-.footer > aside {
+.footer-news > nav,
+.footer-news > aside {
     flex: 0 0 21%;
 }
 
-.footer > nav {
+.footer-news > nav {
     order: -1;
 }
 
-.nav-footer{
+.nav-footer-news {
     margin-top: 5%;
     border: 1px solid #000000;
     text-align: left;
@@ -139,22 +139,22 @@ flex: 0 0 20%;
     padding: 10px;
 }
 
-.footer > article {
+.footer-news > article {
     margin: 0 2% 0 2%;
     flex: 1;
 }
 
-.footer-photo img{
+.footer-news-photo img{
     width: 125px;
     height: auto;
 }
 
-.footer-social img{
+.footer-news-social img{
     width: 30px;
     margin: 5% 2% 5% 0;
 }
 
-.footer form{
+.footer-news form{
     margin-top: 5%;
 }
 
