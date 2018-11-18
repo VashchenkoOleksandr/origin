@@ -1,0 +1,234 @@
+﻿*{
+    color: black;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    background: rgba(110, 207, 31, 0.73);
+    min-height: 50px;
+}
+
+h1, h3{
+    text-transform: uppercase;
+}
+
+.container {
+    justify-content: center;
+    margin-left: 10%;
+    width: 80%;
+}
+
+.button-lng{
+    margin-top: 2%;
+    text-align: right;
+}
+
+.button-lng img{
+    position: fixed;
+    top: 95%;
+    width: 10px;
+    height: auto;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    height: 5%;
+    justify-content: space-between;
+}
+
+.logo-img a img{
+    float: left;
+}
+
+.site-nav ul{
+    border: 1px solid #000000;
+    padding: 5px 0 5px 0;
+}
+
+.site-nav li{
+    display: inline;
+    margin: 10px;
+}
+
+/* main class for main page content style*/
+.button-more-nav{
+    text-transform: uppercase;
+    margin: 2%;
+}
+
+.main {
+    display: flex;
+    flex: 1;
+    margin-bottom: 2%;
+}
+
+.main > nav,
+.main > aside {
+flex: 0 0 20%;
+}
+
+.main > nav {
+    order: -1;
+}
+
+.nav__video{
+    margin-top: 5%;
+    border: 1px solid #000000;
+    text-align: center;
+}
+
+.main > article {
+    margin: 0 2% 0 2%;
+    flex: 1;
+}
+
+.news-photo{
+    width: 100%;
+    max-height: 350px;
+    margin: 10px 0 5px 0;
+}
+
+.comments{
+    text-decoration: underline;
+    color: blue;
+}
+
+.comments:hover{
+    color: red;
+}
+
+
+/* The part of footer style */
+.footer-news {
+    display: flex;
+    flex: 1;
+    border-top: 2px groove #000000;
+}
+
+.footer-news > nav,
+.footer-news > aside {
+    flex: 0 0 21%;
+}
+
+.footer-news > nav {
+    order: -1;
+}
+
+.nav-footer-news {
+    margin-top: 5%;
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 10px;
+    max-width: 70%;
+}
+
+.main-gallery{
+    margin-top: 5%;
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 10px;
+}
+
+.footer-news > article {
+    margin: 0 2% 0 2%;
+    flex: 1;
+}
+
+.footer-news-photo img{
+    width: 125px;
+    height: auto;
+}
+
+.footer-news-social img{
+    width: 30px;
+    margin: 5% 2% 5% 0;
+}
+
+.footer-news form{
+    margin-top: 5%;
+}
+
+
+/* CSS ANIMATION COPY PASS the code https://codepen.io/anon/pen/aQbRdp. But I carefully read, studied and modify the structure of the code*/
+section{
+    text-align: center;
+    margin: 2% 0 2% 0;
+}
+
+.slideshow_wrapper{
+    max-width: 500px;
+    margin: 0 auto;
+    overflow:hidden;
+}
+
+.slideshow{
+    width: 1500px;
+    margin: 0px 0px 0px -1000px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:alternate;
+    -webkit-animation-play-state:running;
+    animation-name: slide_animation;
+    animation-duration: 10s;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    animation-play-state:running;
+}
+
+.slide{
+    width: 500px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+@keyframes slide_animation{
+    0% {left: 0px;}
+    10% {left: 0px;}
+    20% {left: 500px;}
+    30% {left: 500px;}
+    40% {left: 500px;}
+    50% {left: 500px;}
+    60% {left: 1000px;}
+    70% {left: 1000px;}
+    80% {left: 1000px;}
+    90% {left: 1000px;}
+    100% {left:1000px;}
+}
+
+@-webkit-keyframes slide_animation /* Safari and Chrome */{
+    0% {left: 0px;}
+    10% {left: 0px;}
+    20% {left: 500px;}
+    30% {left: 500px;}
+    40% {left: 500px;}
+    50% {left: 500px;}
+    60% {left: 1000px;}
+    70% {left: 1000px;}
+    80% {left: 1000px;}
+    90% {left: 1000px;}
+    100% {left:1000px;}
+}
+
+.slideshow img{
+    width: auto;
+    height: 100px;
+}
+
+.slideshow:hover{
+    -webkit-animation-play-state: paused;
+    animation-play-state:paused;
+}
