@@ -9,18 +9,458 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: gray;
   width: 100%;
 }
 
-.header-main {
-  margin: 41px 0 132px 0;
+.header-heyU {
+  max-width: 2000px;
+  width: 100%;
+  height: 950px;
+  background: url("../img/rectangle-3.svg") center center no-repeat;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
 }
 
-.header-main .site-logo {
-  background: url("../img/heyU-logo.png") center center no-repeat;
+.header-main {
+  margin-top: 41px;
+  width: 90%;
+  max-width: 1600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-main .header-logo {
+  width: 121px;
   height: 42px;
-  width: 125px;
+}
+
+.header-main .header-nav {
+  text-transform: uppercase;
+  height: 16px;
+  width: 413px;
+  margin-right: 0;
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+
+.header-main .header-nav a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.header-main .header-nav a:hover {
+  cursor: pointer;
+  color: lightyellow;
+}
+
+.header-main .header-nav a:active {
+  color: pink;
+}
+
+.header-app {
+  margin-top: 132px;
+  max-width: 1400px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-app .header-download {
+  margin-top: 95px;
+  color: white;
+  font-size: 18px;
+  text-align: left;
+}
+
+.header-app .header-download h2 {
+  font-size: 72px;
+}
+
+.header-app .header-download p {
+  margin-top: 43px;
+  font-size: 23px;
+  line-height: 1.17;
+}
+
+.header-app .header-download p span {
+  font-weight: bold;
+}
+
+.header-app .header-download a {
+  margin-top: 100px;
+  background-color: white;
+  padding: 20px 50px 20px 50px;
+  border-radius: 30px;
+  display: inline-block;
+}
+
+.header-app .header-download a span {
+  background-color: red;
+  font-size: 18px;
+  font-weight: bold;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.header-app img {
+  margin: 0 auto;
+  height: 821px;
+  width: 479px;
+}
+
+.content-block {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.content-block h3 {
+  font-size: 60px;
+  font-weight: 900;
+  color: #363636;
+  margin-bottom: 40px;
+}
+
+.content-block .red-dot {
+  color: red;
+  font-size: 60px;
+}
+
+.content-block p {
+  max-width: 557px;
+  width: 90%;
+}
+
+.content-block .img-block {
+  position: relative;
+}
+
+.content-block .img-block .img-cover1 {
+  position: absolute;
+  top: 60px;
+  left: 170px;
+}
+
+.content-block .img-block .img-cover2 {
+  position: absolute;
+  top: 60px;
+  right: 170px;
+}
+
+.horizontal-line {
+  margin-top: 150px;
+  border-top: 2px solid #e0e0e0;
+  width: 100%;
+  max-width: 2000px;
+}
+
+.blog {
+  margin-top: 90px;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog h3 {
+  font-size: 60px;
+  font-weight: 900;
+  color: #363636;
+  margin-bottom: 40px;
+}
+
+.blog .red-dot {
+  color: red;
+  font-size: 60px;
+}
+
+.blog .message-row {
+  display: flex;
+  margin-top: 100px;
+}
+
+.blog .message-row .block {
+  margin-left: 30px;
+  width: 370px;
+  height: 210px;
+  border: 1px solid whitesmoke;
+  background-color: white;
+}
+
+.blog .message-row .block p {
+  margin: 30px 56px 30px 30px;
+  color: dimgray;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.blog .message-row .block h2 {
+  margin-left: 30px;
+  height: 20px;
+  background-image: linear-gradient(to top, #eb402c, #d90647), linear-gradient(to bottom, #363636, #363636);
+  font-size: 18px;
+  font-weight: bold;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.blog .message-row .central {
+  margin-top: -30px;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.2);
+}
+
+.blog .message-row .comment-arrow {
+  position: relative;
+  left: 15px;
+  top: 22px;
+}
+
+.blog .message-row .comment-arrow:after, .blog .message-row .comment-arrow:before {
+  border: 16px solid transparent;
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  border-top-color: white;
+}
+
+.blog .message-row .comment-arrow:before {
+  border-width: 17px;
+  border-top-color: rgba(0, 0, 0, 0.2);
+}
+
+.blog .img-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1200px;
+}
+
+.blog .img-row .people-img {
+  margin: 30px;
+  width: 370px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+}
+
+.blog .img-row .people-img img {
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.blog .img-row .people-img p {
+  margin-left: 20px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  color: dimgray;
+  line-height: 1.5;
+}
+
+.blog .img-row .people-img span {
+  text-transform: uppercase;
+  color: #929292;
+}
+
+.about-app {
+  margin-top: 200px;
+  width: 100%;
+  max-width: 2000px;
+  height: 517px;
+  background-image: linear-gradient(to top, #eb402c, #d90647);
+  display: flex;
+  justify-content: center;
+}
+
+.about-app-block {
+  margin-top: 50px;
+  display: flex;
+  min-width: 1200px;
+  width: 90%;
+  max-width: 1600px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.about-app-block ul {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.about-app-block li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 180px;
+}
+
+.about-app-block li h3 {
+  color: white;
+  font-size: 24px;
+}
+
+.about-app-block li p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+}
+
+.about-app-block .img-login {
+  position: relative;
+}
+
+.about-app-block .img-login:before {
+  background: rgba(0, 0, 0, 0.5) url(../img/play.png) center center no-repeat;
+  width: 292px;
+  height: 520px;
+  position: absolute;
+  top: 85px;
+  left: 60px;
+  content: " ";
+}
+
+.about-app-block .right-align {
+  text-align: right;
+}
+
+.about-app-block .left-align {
+  text-align: left;
+}
+
+.about-app-block object {
+  margin: 10px;
+  width: 48px;
+  height: 48px;
+  background-size: cover;
+}
+
+.subscribe {
+  width: 1200px;
+  height: 200px;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscribe h3 {
+  font-size: 60px;
+  font-weight: 900;
+  color: #363636;
+}
+
+.subscribe .red-dot {
+  color: red;
+  font-size: 60px;
+}
+
+.subscribe p {
+  color: dimgray;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.subscribe form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe form .subscribe-input {
+  width: 560px;
+  height: 50px;
+  padding-left: 20px;
+  border-radius: 25px;
+  border: none;
+  position: absolute;
+  color: dimgrey;
+  background-color: beige;
+}
+
+.subscribe form .subscribe-button {
+  width: 190px;
+  height: 50px;
+  border-radius: 25px;
+  position: relative;
+  left: 195px;
+  border: none;
+  color: white;
+  background-image: linear-gradient(to top, orangered, red);
+  box-shadow: 5px 5px 10px 0 rgba(103, 7, 21, 0.5);
+}
+
+.download {
+  height: 450px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.download h3 {
+  font-size: 60px;
+  font-weight: 900;
+  color: #363636;
+}
+
+.download .red-dot {
+  color: red;
+  font-size: 60px;
+}
+
+.download p {
+  color: dimgray;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+footer {
+  margin: 0 auto;
+  height: 80px;
+  width: 1300px;
+  max-width: 1600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer nav {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: dimgray;
+}
+
+footer nav a:hover {
+  cursor: pointer;
+  color: darkgray;
+}
+
+footer nav a:active {
+  color: orangered;
+}
+
+footer select {
+  text-transform: uppercase;
+  color: #363636;
+  width: 200px;
+  height: 30px;
+  border-radius: 25px;
+  background-color: beige;
+  padding-left: 30px;
 }

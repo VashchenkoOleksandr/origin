@@ -8,16 +8,334 @@
   flex-direction: column
   justify-content: center
   align-items: center
-  background-color: gray
   width: 100%
 
+.header-heyU
+  max-width: 2000px
+  width: 100%
+  height: 950px
+  background: url("../img/rectangle-3.svg") center center no-repeat
+  display: flex
+  flex-direction: column
+  align-items: center
+
 .header-main
-  margin: 41px 0 132px 0
+  margin-top: 41px
+  width: 90%
+  max-width: 1600px
   display: flex
   flex-direction: row
-  & .site-logo
-    background: url("../img/heyU-logo.png") center center no-repeat
+  justify-content: space-between
+  & .header-logo
+    width: 121px
     height: 42px
-    width: 125px
+  & .header-nav
+    text-transform: uppercase
+    height: 16px
+    width: 413px
+    margin-right: 0
+    display: flex
+    align-self: center
+    justify-content: space-between
+    & a
+      margin-left: 10px
+      text-decoration: none
+      color: white
+    & a:hover
+      cursor: pointer
+      color: lightyellow
+    & a:active
+      color: pink
 
+.header-app
+  margin-top: 132px
+  max-width: 1400px
+  width: 80%
+  display: flex
+  justify-content: space-between
+  & .header-download
+    margin-top: 95px
+    color: white
+    font-size: 18px
+    text-align: left
+    & h2
+      font-size: 72px
+    & p
+      margin-top: 43px
+      font-size: 23px
+      line-height: 1.17
+      & span
+        font-weight: bold
+    & a
+      margin-top: 100px
+      background-color: white
+      padding: 20px 50px 20px 50px
+      border-radius: 30px
+      display: inline-block
+      & span
+        background-color: red
+        font-size: 18px
+        font-weight: bold
+        -webkit-text-fill-color: transparent
+        -webkit-background-clip: text
+  & img
+    margin: 0 auto
+    height: 821px
+    width: 479px
 
+.content-block
+  width: 1200px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  text-align: left
+  & h3
+    font-size: 60px
+    font-weight: 900
+    color: #363636
+    margin-bottom: 40px
+  & .red-dot
+    color: red
+    font-size: 60px
+  & p
+    max-width: 557px
+    width: 90%
+  & .img-block
+    position: relative
+    & .img-cover1
+      position: absolute
+      top: 60px
+      left: 170px
+    & .img-cover2
+      position: absolute
+      top: 60px
+      right: 170px
+
+.horizontal-line
+  margin-top: 150px
+  border-top: 2px solid #e0e0e0
+  width: 100%
+  max-width: 2000px
+
+.blog
+  margin-top: 90px
+  width: 1200px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  & h3
+    font-size: 60px
+    font-weight: 900
+    color: #363636
+    margin-bottom: 40px
+  & .red-dot
+    color: red
+    font-size: 60px
+  & .message-row
+    display: flex
+    margin-top: 100px
+    & .block
+      margin-left: 30px
+      width: 370px
+      height: 210px
+      border: 1px solid whitesmoke
+      background-color: white
+      & p
+        margin: 30px 56px 30px 30px
+        color: dimgray
+        font-size: 18px
+        line-height: 1.5
+      & h2
+        margin-left: 30px
+        height: 20px
+        background-image: linear-gradient(to top, #eb402c, #d90647), linear-gradient(to bottom, #363636, #363636)
+        font-size: 18px
+        font-weight: bold
+        -webkit-text-fill-color: transparent
+        -webkit-background-clip: text
+    & .central
+      margin-top: -30px
+      box-shadow: 0 15px 60px rgba(0, 0, 0, 0.2)
+    & .comment-arrow
+      position: relative
+      left: 15px
+      top: 22px
+      &:after, &:before
+        border: 16px solid transparent
+        content: ""
+        position: absolute
+        pointer-events: none
+        border-top-color: white
+      &:before
+        border-width: 17px
+        border-top-color: rgba(0, 0, 0, 0.2)
+  & .img-row
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    width: 1200px
+    & .people-img
+      margin: 30px
+      width: 370px
+      height: 62px
+      display: flex
+      align-items: center
+      & img
+        background-size: cover
+        border-radius: 30px
+      & p
+        margin-left: 20px
+        text-align: left
+        font-size: 18px
+        font-weight: bold
+        color: dimgray
+        line-height: 1.5
+      & span
+        text-transform: uppercase
+        color: #929292
+
+.about-app
+  margin-top: 200px
+  width: 100%
+  max-width: 2000px
+  height: 517px
+  background-image: linear-gradient(to top, #eb402c, #d90647)
+  display: flex
+  justify-content: center
+
+.about-app-block
+  margin-top: 50px
+  display: flex
+  min-width: 1200px
+  width: 90%
+  max-width: 1600px
+  flex-direction: row
+  align-items: center
+  & ul
+    display: flex
+    flex-direction: column
+    align-self: center
+  & li
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    height: 180px
+    & h3
+      color: white
+      font-size: 24px
+    & p
+      color: rgba(255, 255, 255, 0.6)
+      font-size: 16px
+  & .img-login
+    position: relative
+    &:before
+      background: rgba(0, 0, 0, 0.5) url(../img/play.png) center center no-repeat
+      width: 292px
+      height: 520px
+      position: absolute
+      top: 85px
+      left: 60px
+      content: " "
+  & .right-align
+    text-align: right
+  & .left-align
+    text-align: left
+  & object
+    margin: 10px
+    width: 48px
+    height: 48px
+    background-size: cover
+
+.subscribe
+  width: 1200px
+  height: 200px
+  margin-top: 200px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+  & h3
+    font-size: 60px
+    font-weight: 900
+    color: #363636
+  & .red-dot
+    color: red
+    font-size: 60px
+  & p
+    color: dimgray
+    font-size: 18px
+    line-height: 1.5
+  & form
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    & .subscribe-input
+      width: 560px
+      height: 50px
+      padding-left: 20px
+      border-radius: 25px
+      border: none
+      position: absolute
+      color: dimgrey
+      background-color: beige
+    & .subscribe-button
+      width: 190px
+      height: 50px
+      border-radius: 25px
+      position: relative
+      left: 195px
+      border: none
+      color: white
+      background-image: linear-gradient(to top, orangered, red)
+      box-shadow: 5px 5px 10px 0 rgba(103, 7, 21, 0.5)
+
+.download
+  height: 450px
+  margin-top: 100px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  & h3
+    font-size: 60px
+    font-weight: 900
+    color: #363636
+  & .red-dot
+    color: red
+    font-size: 60px
+  & p
+    color: dimgray
+    font-size: 18px
+    line-height: 1.5
+
+footer
+  margin: 0 auto
+  height: 80px
+  width: 1300px
+  max-width: 1600px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  & nav
+    width: 500px
+    display: flex
+    justify-content: space-between
+    & a
+      text-transform: uppercase
+      text-decoration: none
+      color: dimgray
+      &:hover
+        cursor: pointer
+        color: darkgray
+      &:active
+        color: orangered
+  & select
+    text-transform: uppercase
+    color: #363636
+    width: 200px
+    height: 30px
+    border-radius: 25px
+    background-color: beige
+    padding-left: 30px
