@@ -3,10 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Vashchenko Oleksandr</title>
+    <!-- Only on HW5 I remember about the meta tags. But better late, than never ))) -->
+    <meta name="title" content="It is the SEO title">
+    <meta name="description" content="In the description i point the main information about this page. It is page
+    create what studies project, for learning use the @media rules and functional. I know what description must have
+    maximum 250-300 words">
+    <meta name="keywords" content="HTML, css, sass, HeyU layout, responsive design, CSS @media Rule">
+    <meta name="author" content="Vashchenko Oleksandr">
 
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- This part create to the perspective from 4K (UltraHD 4096 x 2160px) monitors or smart-tv browsers
+    <link rel="stylesheet"  media="screen and (min-width: 1025px) and (max-width: 2000px)" type="text/css"
+    href="css/main.css">
+    -->
+    <!--<link rel="stylesheet" type="text/css" href="css/main.css">-->
+    <link rel="stylesheet"  media="screen and (min-width: 1025px)" type="text/css" href="css/main.css">
+    <link rel="stylesheet"  media="screen and (min-width: 768px) and (max-width: 1024px)" type="text/css" href="css/tablet.css">
+    <link rel="stylesheet"  media="screen and (min-width: 320px) and (max-width: 767px) " type="text/css" href="css/mobile.css">
+    <!--  Super minimalistic design for 220 x 220px display. Minimal resolution to the lower cost smart watch 240*240 -->
+    <link rel="stylesheet"  media="screen and (min-width: 220px) and (max-width: 318px) " type="text/css"
+          href="css/smart-watch.css">
 </head>
+
 <body class="body-main">
 
 <!-- Start the header-->
@@ -16,16 +36,16 @@
     <a href="#" aria-label="Link to the HeyU index page">
         <img class="header-logo" src="img/heyU-logo.png" alt="The site logo">
     </a>
-    <nav class="header-nav">
+    <nav class="header-nav nav-mobile">
         <a href="#" aria-label="Link on main page">about</a>
         <a href="#" aria-label="Link on Frequency Answered Questions">FAQ</a>
         <a href="#" aria-label="Link on support page">support</a>
         <a href="#" aria-label="Link on the bloq">blog</a>
     </nav>
     </div>
-    <section class="header-app">
+    <section class="header-app wrapper-content">
         <div class="header-download">
-            <h2>Simple,safe <br> &amp; beautiful.</h2>
+            <h2>Simple,safe <br /> &amp; beautiful.</h2>
             <p>With <span>HeyU</span>, you&apos;ll get fast, simple, secure messaging!</p>
             <a href="#" aria-label="Download the application"><span>Download now</span></a>
         </div>
@@ -39,7 +59,7 @@
 <!-- Start the page content -->
     <!-- Message section begin -->
 <section>
-    <ul class="content-block">
+    <ul class="content-block wrapper-content">
         <li class="img-block">
             <img src="img/message1.png" alt="Message tab application look"/>
             <img class="img-cover1" src="img/message2.png" alt="Chat tab application look"/>
@@ -73,7 +93,7 @@
     <p hidden> The HeyU the template did not let me sleep a couple nights </p>
 </div>
     <!-- Blog section start -->
-<section class="blog">
+<section class="blog wrapper-content">
     <ul>
         <li>
             <h3>What people say<span class="red-dot">.</span></h3>
@@ -99,7 +119,7 @@
             <div class="comment-arrow"></div>
         </li>
     </ul>
-    <ul class="img-row">
+    <ul class="img-row wrapper-content">
         <li class="people-img">
             <img src="img/man1.png" alt="John Doe photo image" title="John Doe photo">
             <p>John Doe <br /><span>ceo</span></p>
@@ -117,7 +137,7 @@
 
     <!-- About app section start -->
 <section class="about-app">
-    <div class="about-app-block">
+    <div class="about-app-block wrapper-content">
     <ul class="right-align">
         <li>
             <div>
@@ -164,7 +184,7 @@
 </section>
 
     <!-- Subscribe section start -->
-<section class="subscribe">
+<section class="subscribe wrapper-content">
         <h3>Subscribe to our newsletter<span class="red-dot">.</span></h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
             et dolore magna</p>
@@ -182,8 +202,8 @@
 </div>
 
 <!-- Download section start -->
-<section class="download">
-        <img src="img/icon.png" alt="Application icon">
+<section class="download wrapper-content">
+        <img class="watch-img" src="img/icon.png" alt="Application icon">
         <h3>Download the app<span class="red-dot">.</span></h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
         <a href="#" aria-label="Link to the HeyU application in the app-store">
@@ -197,7 +217,7 @@
 </div>
 
 <!-- Start the footer -->
-<footer>
+<footer class="wrapper-content">
     <nav>
         <a href="#" aria-label="Page About menu item">about</a>
         <a href="#" aria-label="Page FAQ menu item">faq</a>

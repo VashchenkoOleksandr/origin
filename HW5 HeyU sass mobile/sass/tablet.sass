@@ -1,0 +1,314 @@
+*
+  font-size: 16px
+  text-decoration: none
+
+.body-main
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+.wrapper-content
+  max-width: 1025px
+  width: 80%
+  min-width: 700px
+
+.header-heyU
+  width: 100%
+  height: 650px
+  padding-bottom: 50px
+  background: url("../img/rectangle-3.svg") right center no-repeat
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.header-main
+  margin-top: 20px
+  width: 90%
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  & .header-logo
+    width: 100%
+  & .header-nav
+    text-transform: uppercase
+    height: 16px
+    max-width: 400px
+    width: 100%
+    margin-left: 10px
+    margin-right: 0
+    display: flex
+    align-self: center
+    justify-content: space-between
+    & a
+      margin-left: 10px
+      color: white
+    & a:hover
+      cursor: pointer
+      color: lightyellow
+    & a:active
+      color: pink
+
+.header-app
+  margin-top: 30px
+  display: flex
+  justify-content: space-around
+  & .header-download
+    margin-top: 50px
+    color: white
+    text-align: left
+    & h2
+      min-width: 350px
+      max-width: 400px
+      font-size: 50px
+    & p
+      margin-top: 20px
+      font-size: 23px
+      line-height: 1.17
+      max-width: 400px
+      & span
+        font-weight: bold
+    & a
+      margin-top: 100px
+      background-color: white
+      padding: 20px 50px 20px 50px
+      border-radius: 30px
+      display: inline-block
+      & span
+        background-color: red
+        font-size: 18px
+        font-weight: bold
+        -webkit-text-fill-color: transparent
+        -webkit-background-clip: text
+  & img
+    margin: 0 auto
+    height: auto
+    width: 300px
+
+.content-block
+  display: flex
+  align-items: center
+  justify-content: space-between
+  text-align: left
+  & h3
+    max-width: 300px
+    font-size: 50px
+    font-weight: 900
+    color: #363636
+    margin-bottom: 20px
+  & .red-dot
+    color: red
+    font-size: 60px
+  & p
+    max-width: 300px
+  & .img-block
+    & .img-cover1
+      display: none
+    & .img-cover2
+      display: none
+
+.horizontal-line
+  margin-top: 8%
+  border-top: 2px solid #e0e0e0
+  width: 100%
+
+.blog
+  margin-top: 30px
+  display: flex
+  flex-direction: column
+  align-items: center
+  max-height: 700px
+  & h3
+    font-size: 60px
+    font-weight: 900
+    color: #363636
+  & .red-dot
+    color: red
+    font-size: 60px
+  & .message-row
+    display: flex
+    flex-direction: column
+    align-self: flex-start
+    margin-top: 20px
+    & .block
+      max-width: 450px
+      margin-left: 30px
+      height: 10%
+      border: 1px solid whitesmoke
+      background-color: white
+      & p
+        margin: 30px 56px 30px 30px
+        color: dimgray
+        font-size: 18px
+        line-height: 1.5
+      & h2
+        margin-left: 30px
+        height: 20px
+        background-image: linear-gradient(to top, #eb402c, #d90647), linear-gradient(to bottom, #363636, #363636)
+        font-weight: bold
+        -webkit-text-fill-color: transparent
+        -webkit-background-clip: text
+  & .img-row
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    position: relative
+    top: -300px
+    & .people-img
+      margin-top: 150px
+      height: 62px
+      display: flex
+      align-items: center
+      & img
+        background-size: cover
+        border-radius: 30px
+      & p
+        margin-left: 20px
+        text-align: left
+        font-weight: bold
+        color: dimgray
+        line-height: 1.5
+      & span
+        text-transform: uppercase
+        color: #929292
+
+.about-app
+  margin-top: 100px
+  width: 100%
+  max-width: 2000px
+  height: 517px
+  background-image: linear-gradient(to top, #eb402c, #d90647)
+  display: flex
+  justify-content: center
+
+.about-app-block
+  margin-top: 50px
+  display: flex
+  flex-direction: row
+  align-items: center
+  & ul
+    display: flex
+    flex-direction: column
+    align-self: center
+  & li
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    height: 180px
+    max-width: 80%
+    & h3
+      color: white
+      font-size: 20px
+    & p
+      color: rgba(255, 255, 255, 0.6)
+    & object
+      margin: -2.5% 10px 0 10px
+      width: 48px
+      height: 48px
+      background-size: cover
+  & .img-login
+    position: relative
+    &:before
+      background: rgba(0, 0, 0, 0.5) url(../img/play.png) center center no-repeat
+      width: 69%
+      height: 520px
+      position: absolute
+      top: 85px
+      left: 60px
+      content: " "
+  & .right-align
+    display: none
+  & .left-align
+    text-align: left
+
+.subscribe
+  height: 250px
+  margin-top: 150px
+  text-align: center
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+  & h3
+    font-size: 50px
+    font-weight: 900
+    color: #363636
+  & .red-dot
+    color: red
+    font-size: 60px
+  & p
+    color: dimgray
+    line-height: 1.5
+  & form
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    & .subscribe-input
+      width: 50%
+      max-width: 600px
+      height: 50px
+      padding-left: 20px
+      border-radius: 25px
+      border: none
+      position: absolute
+      color: dimgrey
+      background-color: beige
+    & .subscribe-button
+      width: 190px
+      height: 50px
+      border-radius: 25px
+      position: relative
+      left: 195px
+      border: none
+      color: white
+      background-image: linear-gradient(to top, orangered, red)
+      box-shadow: 5px 5px 10px 0 rgba(103, 7, 21, 0.5)
+
+.download
+  height: 450px
+  margin-top: 50px
+  text-align: center
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  & h3
+    font-size: 50px
+    font-weight: 900
+    color: #363636
+  & .red-dot
+    color: red
+    font-size: 60px
+  & p
+    color: dimgray
+    font-size: 18px
+    line-height: 1.5
+
+footer
+  margin: 0 auto
+  height: 60px
+  display: flex
+  align-items: center
+  justify-content: space-around
+  & nav
+    width: 55%
+    display: flex
+    justify-content: space-between
+    & a
+      text-transform: uppercase
+      text-decoration: none
+      color: dimgray
+      &:hover
+        cursor: pointer
+        color: darkgray
+      &:active
+        color: orangered
+  & select
+    text-transform: uppercase
+    color: #363636
+    width: 20%
+    height: 30px
+    border-radius: 25px
+    background-color: beige
+    padding-left: 30px
