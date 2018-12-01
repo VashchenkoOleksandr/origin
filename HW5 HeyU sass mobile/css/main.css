@@ -282,7 +282,7 @@
 .about-app-block ul {
   display: flex;
   flex-direction: column;
-  align-self: center;
+  align-items: center;
 }
 
 .about-app-block li {
