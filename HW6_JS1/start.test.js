@@ -119,7 +119,7 @@ test('test_compare_operators', () => {
 //begin equality comparison algorithm training test block
 
 test('test_equality_comparison_algorithm', () => {
-    expect(long_string + numeric).toEqual('string1,string2,string3,string4,string5,string6,string71,2,3,4,5,6,7,8');
+    expect(long_string + numeric).toEqual('string1,string2,string3,string4,string5,string6,string71,2,3,4,5,6,7,8,9');
     expect(long_string + ', ' + num1).toEqual('string1,string2,string3,string4,string5,string6,string7, 1');
     expect(long_string - numeric).toEqual(NaN);
     expect(numeric - 1).toEqual(NaN);
