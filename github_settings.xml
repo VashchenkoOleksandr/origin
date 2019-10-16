@@ -1,0 +1,7 @@
+<application>
+  <component name="GithubAccounts">
+    <account id="942f1e21-ea3d-4760-9bf5-1e4551192857" name="WebInfUa">
+      <server host="github.com" />
+    </account>
+  </component>
+</application>
