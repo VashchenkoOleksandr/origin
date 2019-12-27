@@ -2,6 +2,7 @@
   <component name="MaterialThemeConfig">
     <option name="version" value="2.9.2" />
     <option name="selectedTheme" value="DARKER" />
+    <option name="highlightColor" value="80cbc4" />
     <option name="accentColor" value="54cb4b" />
     <option name="arrowsStyle" value="Darcula" />
     <option name="userId" value="2a1f9740:16760c66567:-7ff9" />
