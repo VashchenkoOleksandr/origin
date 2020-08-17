@@ -1,0 +1,8 @@
+<application>
+  <component name="LanguageInjectionConfiguration">
+    <injection language="JSON" injector-id="twig">
+      <display-name>Json Schema</display-name>
+      <place><![CDATA[twigCustomStatement("schema")]]></place>
+    </injection>
+  </component>
+</application>
