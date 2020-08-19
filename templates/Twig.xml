@@ -44,4 +44,9 @@
       <option name="Twig" value="true" />
     </context>
   </template>
+  <template name="ss" value="{{ section.settings.$END$ }}" description="include 'template'" toReformat="true" toShortenFQNames="false">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
 </templateSet>
