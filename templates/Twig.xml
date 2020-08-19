@@ -1,0 +1,30 @@
+<templateSet group="Twig">
+  <template name="for" value="{%- for $VAR$ in $SEQUENCE$ -%}&#10;    $END$&#10;{%- endfor -%}" description="for...in...endfor" toReformat="true" toShortenFQNames="false">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SEQUENCE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="from" value="{%- from '$TEMPLATE$' import $END$ -%}&#10;" description="from 'template' import..." toReformat="true" toShortenFQNames="false">
+    <variable name="TEMPLATE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="if" value="{%- if $CONDITION$ -%}&#10;    $END$&#10;{%- endif -%}" description="if...endif" toReformat="true" toShortenFQNames="false">
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="inc" value="{%- include '$TEMPLATE$'$END$ -%}" description="include 'template'" toReformat="true" toShortenFQNames="false">
+    <variable name="TEMPLATE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ass" value="{%- assign $VAR$ = section.settings.$END$ -%}" description="include 'template'" toReformat="true" toShortenFQNames="false">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="asb" value="{%- assign blocks = section.blocks.$END$ -%}" description="include 'template'" toReformat="true" toShortenFQNames="false">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+</templateSet>
