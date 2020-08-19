@@ -27,4 +27,11 @@
       <option name="Twig" value="true" />
     </context>
   </template>
+  <template name="ife" value="{%- if $CONDITION$ -%}&#10;    $STATE$&#10;{%- else -%}&#10;    $END$&#10;{%- endif -%}" description="if...endif" toReformat="true" toShortenFQNames="false">
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="STATE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
 </templateSet>
