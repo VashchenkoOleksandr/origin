@@ -34,4 +34,14 @@
       <option name="Twig" value="true" />
     </context>
   </template>
+  <template name="t" value="{%- $END$ -%}" description="include 'template'" toReformat="true" toShortenFQNames="false">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="e" value="{{ $END$ }}" description="include 'template'" toReformat="true" toShortenFQNames="false">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
 </templateSet>
