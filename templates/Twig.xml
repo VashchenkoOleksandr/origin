@@ -16,13 +16,15 @@
     <variable name="TEMPLATE" expression="" defaultValue="" alwaysStopAt="true" />
     <context />
   </template>
-  <template name="ass" value="{%- assign $VAR$ = section.settings.$END$ -%}" description="include 'template'" toReformat="true" toShortenFQNames="false">
+  <template name="ass" value="{%- assign $VAR$ = section.settings.$PARAM$ -%}&#10;$END$" description="include 'template'" toReformat="true" toShortenFQNames="false">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Twig" value="true" />
     </context>
   </template>
-  <template name="asb" value="{%- assign blocks = section.blocks.$END$ -%}" description="include 'template'" toReformat="true" toShortenFQNames="false">
+  <template name="asb" value="{%- assign blocks = section.blocks.$PARAM$ -%}&#10;$END$" description="include 'template'" toReformat="true" toShortenFQNames="false">
+    <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Twig" value="true" />
     </context>
@@ -45,6 +47,13 @@
     </context>
   </template>
   <template name="ss" value="{{ section.settings.$END$ }}" description="include 'template'" toReformat="true" toShortenFQNames="false">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="abs" value="{%- assign $VAR$ = block.settings.$PARAM$ -%}&#10;$END$" description="include 'template'" toReformat="true" toShortenFQNames="false">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Twig" value="true" />
     </context>
