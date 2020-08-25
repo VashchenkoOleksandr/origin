@@ -58,4 +58,11 @@
       <option name="Twig" value="true" />
     </context>
   </template>
+  <template name="as" value="{%- assign $VAR$ = $PARAM$ -%}&#10;$END$" description="include 'template'" toReformat="true" toShortenFQNames="false">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
 </templateSet>
