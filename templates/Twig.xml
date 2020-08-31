@@ -65,4 +65,10 @@
       <option name="Twig" value="true" />
     </context>
   </template>
+  <template name="c" value="{%- comment -%}&#10;    $Comment$&#10;{%- endcomment -%}&#10;$END$&#10;" description="include 'template'" toReformat="true" toShortenFQNames="false">
+    <variable name="Comment" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
 </templateSet>
