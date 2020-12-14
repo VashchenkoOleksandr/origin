@@ -1,6 +1,7 @@
 <application>
-  <component name="FileTypeManager" version="18">
+  <component name="FileTypeManager" version="17">
     <extensionMap>
+      <removed_mapping ext="mjs" approved="true" type="ECMAScript 6" />
       <mapping pattern="*.js.liquid" type="JavaScript" />
       <mapping ext="mjs" type="JavaScript" />
       <mapping pattern="_img_svg.scss" type="PLAIN_TEXT" />
