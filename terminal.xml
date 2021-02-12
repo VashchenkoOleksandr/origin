@@ -1,6 +1,6 @@
 <application>
   <component name="TerminalOptionsProvider">
-    <option name="myShellPath" value="&quot;cmd.exe&quot; /k color 07 " />
+    <option name="myShellPath" value="cmd.exe /k color 07" />
     <option name="myTabName" value="Local" />
   </component>
 </application>
