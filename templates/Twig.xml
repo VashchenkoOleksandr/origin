@@ -4,10 +4,6 @@
     <variable name="SEQUENCE" expression="" defaultValue="" alwaysStopAt="true" />
     <context />
   </template>
-  <template name="from" value="{%- from '$TEMPLATE$' import $END$ -%}&#10;" description="from 'template' import..." toReformat="true" toShortenFQNames="false">
-    <variable name="TEMPLATE" expression="" defaultValue="" alwaysStopAt="true" />
-    <context />
-  </template>
   <template name="if" value="{%- if $CONDITION$ -%}&#10;    $END$&#10;{%- endif -%}" description="if...endif" toReformat="true" toShortenFQNames="false">
     <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
     <context />
@@ -16,15 +12,14 @@
     <variable name="TEMPLATE" expression="" defaultValue="" alwaysStopAt="true" />
     <context />
   </template>
-  <template name="ass" value="{%- assign $VAR$ = section.settings.$PARAM$ -%}&#10;$END$" description="include 'template'" toReformat="true" toShortenFQNames="false">
+  <template name="ass" value="{%- assign $VAR$ = section.settings.$PARAM$ -%}$END$" description="include 'template'" toReformat="true" toShortenFQNames="false">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Twig" value="true" />
     </context>
   </template>
-  <template name="asb" value="{%- assign blocks = section.blocks.$PARAM$ -%}&#10;$END$" description="include 'template'" toReformat="true" toShortenFQNames="false">
-    <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="asb" value="{%- assign blocks = section.blocks -%}$END$" description="include 'template'" toReformat="true" toShortenFQNames="false">
     <context>
       <option name="Twig" value="true" />
     </context>
@@ -41,7 +36,9 @@
       <option name="Twig" value="true" />
     </context>
   </template>
-  <template name="e" value="{{ $END$ }}" description="include 'template'" toReformat="true" toShortenFQNames="false">
+  <template name="un" value="{%- unless $VAR$ -%}&#10;    $CONTENT$&#10;{%- endunless -%}&#10;{{ $END$ }}" description="include 'template'" toReformat="true" toShortenFQNames="false">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Twig" value="true" />
     </context>
@@ -51,14 +48,14 @@
       <option name="Twig" value="true" />
     </context>
   </template>
-  <template name="abs" value="{%- assign $VAR$ = block.settings.$PARAM$ -%}&#10;$END$" description="include 'template'" toReformat="true" toShortenFQNames="false">
+  <template name="abs" value="{%- assign $VAR$ = block.settings.$PARAM$ -%}$END$" description="include 'template'" toReformat="true" toShortenFQNames="false">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="Twig" value="true" />
     </context>
   </template>
-  <template name="as" value="{%- assign $VAR$ = $PARAM$ -%}&#10;$END$" description="include 'template'" toReformat="true" toShortenFQNames="false">
+  <template name="as" value="{%- assign $VAR$ = $PARAM$ -%}$END$" description="include 'template'" toReformat="true" toShortenFQNames="false">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -67,6 +64,27 @@
   </template>
   <template name="c" value="{%- comment -%}&#10;    $Comment$&#10;{%- endcomment -%}&#10;$END$&#10;" description="include 'template'" toReformat="true" toShortenFQNames="false">
     <variable name="Comment" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="ren" value="{%- render $NAME$ -%}&#10;" description="macro...endmacro" toReformat="true" toShortenFQNames="false">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="case" value="{%- case $VAR$ -%}&#10;    {%- when $VAR1$ -%}&#10;        $CONTENT1$&#10;    {%- when $VAR2$ -%}&#10;        $CONTENT2$&#10;{%- endcase -%}" description="import 'template'" toReformat="true" toShortenFQNames="false">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONTENT1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONTENT2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="Lorem" value="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. $END$" description="sandbox...endsandbox" toReformat="true" toShortenFQNames="false">
     <context>
       <option name="Twig" value="true" />
     </context>
