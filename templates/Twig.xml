@@ -89,4 +89,17 @@
       <option name="Twig" value="true" />
     </context>
   </template>
+  <template name="if!" value="{%- if $VAR$ != $PARAM$ -%}&#10;  $END$&#10;{%- endif -%}" description="include 'template'" toReformat="true" toShortenFQNames="false">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="if!b" value="{%- if $VAR$ != blank -%}&#10;  $END$&#10;{%- endif -%}" description="include 'template'" toReformat="true" toShortenFQNames="false">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
 </templateSet>
