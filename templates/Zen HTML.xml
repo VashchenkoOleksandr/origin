@@ -1,8 +1,21 @@
 <templateSet group="Zen HTML">
+  <template name="t" value="{{$END$}}" description="BigCommerce TAG" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="JSX_HTML" value="true" />
+    </context>
+  </template>
   <template name="a" value="&lt;a href=&quot;$VAR0$&quot; title=&quot;$VAR1$&quot; aria-label=&quot;$VAR2$&quot;&gt;$END$&lt;/a&gt;" description="&lt;a href=&quot;...&quot;&gt;...&lt;/a&gt;" toReformat="true" toShortenFQNames="true">
     <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
     <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ri:v" value="&lt;img src=&quot;$VAR2$&quot; alt=&quot;$VAR3$&quot; sizes=&quot;$VAR0$&quot; lazy=&quot;load&quot; srcset=&quot;$VAR1$&quot;&gt;" description="&lt;img src=&quot;...&quot; alt=&quot;...&quot; sizes=&quot;...&quot; srcset=&quot;...&quot;&gt;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
     <context />
   </template>
   <template name="if" value="{{#if $COND$ }}&#10;    $END$&#10;{{/if}}" shortcut="TAB" description="BigCommerce operator if" toReformat="false" toShortenFQNames="true">
@@ -33,6 +46,28 @@
     </context>
   </template>
   <template name="cdn" value="{{cdn $END$}}" shortcut="TAB" description="BigCommerce cdn" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="cont" value="{{#contains $ARR$ $VAL$}}&#10;    $END$&#10;{{/contains}}" shortcut="TAB" description="BigCommerce Contains" toReformat="false" toShortenFQNames="true">
+    <variable name="ARR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="conte" value="{{#contains $ARR$ $VAL$}}&#10;    $STATE1$&#10;{{else}}&#10;    $END$&#10;{{/contains}}" shortcut="TAB" description="BigCommerce Contains ELSE" toReformat="false" toShortenFQNames="true">
+    <variable name="ARR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="STATE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="for" value="{{#for $NUM1$ $NUM2$}}&#10;    $END$&#10;{{/for}}" shortcut="TAB" description="BigCommerce for" toReformat="false" toShortenFQNames="true">
+    <variable name="NUM1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NUM2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
     </context>
