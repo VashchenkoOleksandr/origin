@@ -1,0 +1,40 @@
+<templateSet group="Zen HTML">
+  <template name="a" value="&lt;a href=&quot;$VAR0$&quot; title=&quot;$VAR1$&quot; aria-label=&quot;$VAR2$&quot;&gt;$END$&lt;/a&gt;" description="&lt;a href=&quot;...&quot;&gt;...&lt;/a&gt;" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="if" value="{{#if $COND$ }}&#10;    $END$&#10;{{/if}}" shortcut="TAB" description="BigCommerce operator if" toReformat="false" toShortenFQNames="true">
+    <variable name="COND" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="ife" value="{{#if $COND$ }}&#10;    $STATE1$&#10;{{else}}&#10;    $STATE2$&#10;{{/if}}" description="BigCommerce operator if else" toReformat="false" toShortenFQNames="true">
+    <variable name="COND" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="STATE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="STATE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="if!" value="{{#if $COND1$ !== $COND2$ }}&#10;    $END$&#10;{{/if}}" shortcut="TAB" description="BigCommerce operator if" toReformat="false" toShortenFQNames="true">
+    <variable name="COND1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COND2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="each" value="{{#each $OBJ$}}&#10;    $END$&#10;{{/each}}" shortcut="TAB" description="BigCommerce operator each" toReformat="false" toShortenFQNames="true">
+    <variable name="OBJ" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="cdn" value="{{cdn $END$}}" shortcut="TAB" description="BigCommerce cdn" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+</templateSet>
