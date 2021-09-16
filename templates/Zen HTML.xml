@@ -32,7 +32,7 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="if!" value="{{#if $COND1$ !== $COND2$ }}&#10;    $END$&#10;{{/if}}" shortcut="TAB" description="BigCommerce operator if" toReformat="false" toShortenFQNames="true">
+  <template name="if!" value="{{#if $COND1$ '!==' $COND2$ }}&#10;    $END$&#10;{{/if}}" shortcut="TAB" description="BigCommerce operator if" toReformat="false" toShortenFQNames="true">
     <variable name="COND1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="COND2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -70,6 +70,25 @@
     <variable name="NUM2" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="all" value="{{#all $COND$}}&#10;    $END$&#10;{{/all}}" shortcut="TAB" description="BigCommerce ALL" toReformat="false" toShortenFQNames="true">
+    <variable name="COND" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="com" value="{{&gt; $END$}}&#10;" shortcut="TAB" description="BigCommerce COMPONENTS" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="tt" value="{{#$TAG$ $VAR$}}&#10;    $END$&#10;{{/$TAG$}}" description="BigCommerce TAG" toReformat="true" toShortenFQNames="true">
+    <variable name="TAG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="JSX_HTML" value="true" />
     </context>
   </template>
 </templateSet>
