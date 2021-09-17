@@ -9,7 +9,6 @@
       <mapping pattern=".env" type="PLAIN_TEXT" />
       <mapping pattern="_redirects" type="PLAIN_TEXT" />
       <mapping pattern="assets" type="PLAIN_TEXT" />
-      <mapping pattern="*.scss.liguid" type="SCSS" />
       <mapping ext="liquid" type="Twig" />
       <removed_mapping ext="mjs" approved="true" type="ECMAScript 6" />
     </extensionMap>
