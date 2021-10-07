@@ -9,6 +9,7 @@
     <variable name="VAR0" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
     <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="class" expression="" defaultValue="" alwaysStopAt="true" />
     <context />
   </template>
   <template name="ri:v" value="&lt;img src=&quot;$VAR2$&quot; alt=&quot;$VAR3$&quot; sizes=&quot;$VAR0$&quot; lazy=&quot;load&quot; srcset=&quot;$VAR1$&quot;&gt;" description="&lt;img src=&quot;...&quot; alt=&quot;...&quot; sizes=&quot;...&quot; srcset=&quot;...&quot;&gt;" toReformat="true" toShortenFQNames="true">
