@@ -4,8 +4,8 @@
       <mapping pattern="code" type="AUTO_DETECTED" />
       <mapping pattern="*.js.liquid" type="JavaScript" />
       <mapping ext="mjs" type="JavaScript" />
-      <mapping pattern="_img_svg.scss" type="PLAIN_TEXT" />
       <mapping pattern="Viber" type="PLAIN_TEXT" />
+      <mapping pattern="_img_svg.scss" type="PLAIN_TEXT" />
       <mapping pattern=".env" type="PLAIN_TEXT" />
       <mapping pattern="_redirects" type="PLAIN_TEXT" />
       <mapping pattern="assets" type="PLAIN_TEXT" />
