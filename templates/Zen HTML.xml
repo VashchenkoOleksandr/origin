@@ -92,4 +92,11 @@
       <option name="JSX_HTML" value="true" />
     </context>
   </template>
+  <template name="or" value="{{#or $COND1$ $COND2$}}&#10;    $END$&#10;{{/or}}" shortcut="TAB" description="BigCommerce operator or" toReformat="false" toShortenFQNames="true">
+    <variable name="COND1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COND2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
 </templateSet>
